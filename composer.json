@@ -1,0 +1,39 @@
+{
+  "name": "paytic/payments-simplify",
+  "type": "library",
+  "license": "MIT",
+  "description": "Payments module for bytic library for simplify mastercard",
+  "keywords": [],
+  "homepage": "https://github.com/paytic/payments-simplify",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Paytic\\Payments\\Simplify\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Paytic\\Payments\\Simplify\\Tests\\": "tests/src",
+      "Paytic\\Payments\\Simplify\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "require": {
+    "php": "^7.2|^8.0",
+    "paytic/omnipay-simplify": "^2.0|^3.0"
+  },
+  "require-dev": {
+    "ext-zlib": "*",
+    "bytic/payments": "^1.0",
+    "bytic/payments-tests": "^1.0",
+    "bytic/form": "^1.0",
+    "bytic/common": "^0.9|^1.0",
+    "phpunit/phpunit": "^6.0|^7.0|^8.0|^9.0",
+    "vlucas/phpdotenv": "^4.0",
+    "omnipay/tests": "^3"
+  }
+}
