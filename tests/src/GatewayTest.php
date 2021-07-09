@@ -21,20 +21,16 @@ class GatewayTest extends AbstractGatewayTest
         $gateway->setMerchant('999999');
         self::assertFalse($gateway->isActive());
 
+        $gateway->setMerchantName('999999');
+        self::assertFalse($gateway->isActive());
+
         $gateway->setApiPassword('999999');
         self::assertTrue($gateway->isActive());
     }
 
     public function test_gateway_from_method()
     {
-        $gateway = new Gateway();
-        self::assertFalse($gateway->isActive());
-
-        $gateway->setMerchant('999999');
-        self::assertFalse($gateway->isActive());
-
-        $gateway->setApiPassword('999999');
-        self::assertTrue($gateway->isActive());
+        self::assertTrue($this->gateway->isActive());
     }
 
 

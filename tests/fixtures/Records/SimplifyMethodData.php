@@ -20,6 +20,7 @@ class SimplifyMethodData
             "simplify" => [
                 "sandbox" => "no",
                 "merchant" => getenv('SIMPLIFY_MERCHANT'),
+                "merchant_name" => "test name",
                 "apiPassword" => getenv('SIMPLIFY_API_PASSWORD'),
                 "apiHost" => "",
             ],
